@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Sivaiah JG</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        body {
+            margin: 0;
+            padding: 5px;
+            font-family: 'Georgia', serif;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .biodata-container {
+            width: 210mm;
+            background: #FFF8E7;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .outer-border {
+            border: 3px solid #8B6914;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .dotted-border {
+            border: 2px dotted #DAA520;
+            padding: 20px;
+        }
+        
+        .corner-design {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .top-left { top: -2px; left: -2px; }
+        .top-right { top: -2px; right: -2px; transform: scaleX(-1); }
+        .bottom-left { bottom: -2px; left: -2px; transform: scaleY(-1); }
+        .bottom-right { bottom: -2px; right: -2px; transform: scale(-1); }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .ganesh-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #8B0000;
+            font-weight: bold;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #2C5F7C;
+            font-weight: bold;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #2C5F7C;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .left-section {
+            flex: 1;
+        }
+        
+        .photo-section {
+            width: 180px;
+            margin-top: 10px;
+        }
+        
+        .photo {
+            width: 180px;
+            height: 240px;
+            border: 3px solid #8B6914;
+            object-fit: cover;
+            background: #E8E8E8;
+        }
+        
+        .info-row {
+            display: flex;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .label {
+            width: 150px;
+            color: #4A5F7C;
+            font-weight: 600;
+        }
+        
+        .colon {
+            width: 20px;
+            text-align: center;
+        }
+        
+        .value {
+            flex: 1;
+            color: #333;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 16px;
+            color: #2C5F7C;
+            font-weight: bold;
+            margin: 25px 0 15px;
+            letter-spacing: 1px;
+        }
+        
+        @media print {
+            body { padding: 0; }
+            .biodata-container { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="biodata-container">
+        <div class="outer-border">
+
+            <!-- Corner designs -->
+            <svg class="corner-design top-left" viewBox="0 0 40 40">
+                <path d="M0,40 Q0,0 40,0 L40,5 Q5,5 5,40 Z" fill="#8B6914"/>
+                <circle cx="15" cy="15" r="8" fill="none" stroke="#8B6914" stroke-width="2"/>
+                <circle cx="30" cy="10" r="5" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+            </svg>
+            <svg class="corner-design top-right" viewBox="0 0 40 40">
+                <path d="M0,40 Q0,0 40,0 L40,5 Q5,5 5,40 Z" fill="#8B6914"/>
+                <circle cx="15" cy="15" r="8" fill="none" stroke="#8B6914" stroke-width="2"/>
+                <circle cx="30" cy="10" r="5" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+            </svg>
+            <svg class="corner-design bottom-left" viewBox="0 0 40 40">
+                <path d="M0,40 Q0,0 40,0 L40,5 Q5,5 5,40 Z" fill="#8B6914"/>
+                <circle cx="15" cy="15" r="8" fill="none" stroke="#8B6914" stroke-width="2"/>
+                <circle cx="30" cy="10" r="5" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+            </svg>
+            <svg class="corner-design bottom-right" viewBox="0 0 40 40">
+                <path d="M0,40 Q0,0 40,0 L40,5 Q5,5 5,40 Z" fill="#8B6914"/>
+                <circle cx="15" cy="15" r="8" fill="none" stroke="#8B6914" stroke-width="2"/>
+                <circle cx="30" cy="10" r="5" fill="none" stroke="#DAA520" stroke-width="1.5"/>
+            </svg>
+
+            <div class="dotted-border">
+                <div class="header">
+                    <div class="ganesh-icon">ॐ</div>
+                    <div class="title">|| SHREE GANESHAYA NAMAH ||</div>
+                    <div class="subtitle">BIODATA</div>
+                </div>
+                
+                <div class="content-wrapper">
+                    <div class="left-section">
+
+                        <div class="info-row"><div class="label">Name</div><div class="colon">:</div><div class="value">Sivaiah JG</div></div>
+                        <div class="info-row"><div class="label">Date of Birth</div><div class="colon">:</div><div class="value">06/06/1997</div></div>
+                        <div class="info-row"><div class="label">Time of Birth</div><div class="colon">:</div><div class="value">02:45 AM</div></div>
+                        <div class="info-row"><div class="label">Place of Birth</div><div class="colon">:</div><div class="value">Chennai</div></div>
+                        <div class="info-row"><div class="label">Rashi</div><div class="colon">:</div><div class="value">Kumbha (Sathayam 4)</div></div>
+                        <div class="info-row"><div class="label">Religion</div><div class="colon">:</div><div class="value">Hindu</div></div>
+                        <div class="info-row"><div class="label">Caste</div><div class="colon">:</div><div class="value">BC</div></div>
+                        <div class="info-row"><div class="label">Weight</div><div class="colon">:</div><div class="value">78 KG</div></div>
+                        <div class="info-row"><div class="label">Height</div><div class="colon">:</div><div class="value">6 ft. 2 in.</div></div>
+                        <div class="info-row"><div class="label">Blood Group</div><div class="colon">:</div><div class="value">O+</div></div>
+                        <div class="info-row"><div class="label">Education</div><div class="colon">:</div><div class="value">Bachelor of Engineering (BE)</div></div>
+                        <div class="info-row"><div class="label">Profession</div><div class="colon">:</div><div class="value">Software Developer with hands-on experience in the IT industry</div></div>
+                        <div class="info-row"><div class="label">Occupation</div><div class="colon">:</div><div class="value">Currently working at Interscripts Private Limited, Hyderabad</div></div>
+                        <div class="info-row"><div class="label">Income</div><div class="colon">:</div><div class="value">7.0 LPA</div></div>
+
+                    </div>
+
+                    <div class="photo-section">
+                        <img class="photo" src="./photo-ID-1.jpg" alt="Profile Photo">
+                    </div>
+                </div>
+                
+                <div class="section-title">FAMILY DETAILS</div>
+
+                <div class="info-row"><div class="label">Father Name</div><div class="colon">:</div><div class="value">Gopi</div></div>
+                <div class="info-row"><div class="label">Occupation</div><div class="colon">:</div><div class="value">Farmer</div></div>
+                <div class="info-row"><div class="label">Mother Name</div><div class="colon">:</div><div class="value">Neela</div></div>
+                <div class="info-row"><div class="label">Occupation</div><div class="colon">:</div><div class="value">Housewife</div></div>
+                <div class="info-row"><div class="label">Brother</div><div class="colon">:</div><div class="value">1 Unmarried</div></div>
+
+                <div class="section-title">CONTACT DETAILS</div>
+
+                <div class="info-row"><div class="label">Address</div><div class="colon">:</div><div class="value">Katchur Kovil Street, Uthukottai, Thiruvallur - 602026</div></div>
+                <div class="info-row"><div class="label">Contact No.</div><div class="colon">:</div><div class="value">9751808175</div></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
